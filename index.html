@@ -9,6 +9,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Andrew Wilder">
+    <script>
+        let d = new Date();
+        alert("Today's date is " + d);
+    </script>
+    <script type = "text/javascript">  
+        function myfunction() 
+        {   
+        alert("follow my linkedin @ andrewwildrr");  
+        }  
+        </script>  
+    <script type = "text/javascript">
+        function function_2(t) 
+        {
+            alert("t.toUpperCase();")
+        }
+    </script>
     <style>
         body {
             background: #162E41;
@@ -30,7 +46,6 @@
                 <a href = "#about"><li>about</li></a>
                 <a href = "#experience"><li>experience</li></a>
                 <a href = "#projects"><li>projects</li></a>
-                <a><li>button?</li></a>
             </ul>
         </div>
     </div>
@@ -119,14 +134,16 @@
             <br><br>
 
         </a>
-    </div>
-    <form style="margin-left: 15%;margin-right: 15%;">
+    <form style="margin-left: 15%;margin-right: 15%;" onsubmit="function_2(Submit)">
         <div style = "color:black">
             <label for="input">Give me a word:</label><br>
             <input type="text" id = "input" name = "input">
+            <input type="submit" value="Submit">
         </div>
     </form>
-
+    <p>Click</p>  
+    <input type = "button" onclick = "myfunction()" value = "Display">
+</div>
+ 
 </body>
-
 </html>
